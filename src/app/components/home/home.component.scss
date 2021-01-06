@@ -1,0 +1,24 @@
+:host {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 200px calc(100vh - 200px);
+  grid-template-areas:
+    "search search"
+    "filters cards";
+
+  & > * {
+    border: 1px double gray;
+  }
+}
+
+app-search {
+  grid-area: search;
+}
+
+app-filters {
+  grid-area: filters;
+}
+
+app-cards {
+  grid-area: cards;
+}

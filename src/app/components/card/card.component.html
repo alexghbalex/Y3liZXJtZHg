@@ -1,0 +1,13 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{card.API}}</mat-card-title>
+    <mat-card-subtitle>{{card.Description}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <a [href]="card.Link">Link: {{card.Link}}</a>
+    <p>
+      <span class="category">{{card.Category}}</span>
+      <span>{{card.HTTPS ? 'HTTPS' : 'HTTP'}}</span>
+    </p>
+  </mat-card-content>
+</mat-card>
